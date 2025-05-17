@@ -1,0 +1,126 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Manzanas rojas",
+      "description": "Manzanas frescas y dulces, ideales para snacks o jugos.",
+      "price": 3.99,
+      "stock": 120,
+      "category": "frutas",
+      "image": "https://via.placeholder.com/300x300?text=Manzanas",
+      "createdAt": "2025-05-17T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Plátanos",
+      "description": "Plátanos maduros, ricos en potasio y energía natural.",
+      "price": 2.49,
+      "stock": 200,
+      "category": "frutas",
+      "image": "https://via.placeholder.com/300x300?text=Plátanos",
+      "createdAt": "2025-05-17T10:05:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Arroz blanco 1kg",
+      "description": "Arroz blanco premium, ideal para cualquier comida.",
+      "price": 1.99,
+      "stock": 300,
+      "category": "granos",
+      "image": "https://via.placeholder.com/300x300?text=Arroz",
+      "createdAt": "2025-05-17T10:10:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Huevos AA (12 unidades)",
+      "description": "Huevos frescos de gallina, tamaño AA.",
+      "price": 3.25,
+      "stock": 150,
+      "category": "lacteos-huevos",
+      "image": "https://via.placeholder.com/300x300?text=Huevos",
+      "createdAt": "2025-05-17T10:15:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Leche entera 1L",
+      "description": "Leche entera pasteurizada, 100% natural.",
+      "price": 1.49,
+      "stock": 180,
+      "category": "lacteos-huevos",
+      "image": "https://via.placeholder.com/300x300?text=Leche",
+      "createdAt": "2025-05-17T10:20:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Pan tajado integral",
+      "description": "Pan integral ideal para desayunos o meriendas.",
+      "price": 2.1,
+      "stock": 90,
+      "category": "panaderia",
+      "image": "https://via.placeholder.com/300x300?text=Pan",
+      "createdAt": "2025-05-17T10:25:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Pechuga de pollo (500g)",
+      "description": "Pechuga de pollo sin hueso, lista para cocinar.",
+      "price": 5.99,
+      "stock": 75,
+      "category": "carnes",
+      "image": "https://via.placeholder.com/300x300?text=Pollo",
+      "createdAt": "2025-05-17T10:30:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Papas criollas (1kg)",
+      "description": "Papas criollas frescas, ideales para sopas y guisos.",
+      "price": 1.85,
+      "stock": 160,
+      "category": "verduras",
+      "image": "https://via.placeholder.com/300x300?text=Papas",
+      "createdAt": "2025-05-17T10:35:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Tomates chonto (1kg)",
+      "description": "Tomates frescos para ensaladas y cocina casera.",
+      "price": 2.3,
+      "stock": 130,
+      "category": "verduras",
+      "image": "https://via.placeholder.com/300x300?text=Tomates",
+      "createdAt": "2025-05-17T10:40:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Café molido 250g",
+      "description": "Café 100% colombiano, tostado medio.",
+      "price": 4.75,
+      "stock": 110,
+      "category": "bebidas",
+      "image": "https://via.placeholder.com/300x300?text=Café",
+      "createdAt": "2025-05-17T10:45:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@tienda.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Cliente",
+      "email": "cliente@tienda.com",
+      "role": "user"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": 2,
+      "productId": 1,
+      "quantity": 2
+    }
+  ]
+}
