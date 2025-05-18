@@ -1,94 +1,94 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "abc123",
       "name": "Manzanas rojas (1 kg)",
       "description": "Manzanas frescas y dulces. Se venden por kilo.",
       "price": 8200,
       "stock": 120,
       "category": "frutas",
-      "image": "https://via.placeholder.com/300x300?text=Manzanas"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQezLLaAdKT8f16d0EIWRTFNjKP3R_vGbxDjQ&s"
     },
     {
-      "id": 2,
+      "id": "def456",
       "name": "Plátanos maduros (1 kg)",
       "description": "Plátanos ricos en energía natural. Precio por kilo.",
       "price": 2600,
       "stock": 200,
       "category": "frutas",
-      "image": "https://via.placeholder.com/300x300?text=Plátanos"
+      "image": "https://pngimg.com/uploads/banana/banana_PNG814.png"
     },
     {
-      "id": 3,
+      "id": "ca44",
       "name": "Arroz blanco (1 kg)",
       "description": "Arroz blanco tipo premium, ideal para cualquier receta.",
       "price": 3900,
       "stock": 300,
       "category": "granos",
-      "image": "https://via.placeholder.com/300x300?text=Arroz"
+      "image": "https://pngimg.com/uploads/rice/rice_PNG26.png"
     },
     {
-      "id": 4,
+      "id": "h5u3",
       "name": "Huevos AA (12 unidades)",
       "description": "Docena de huevos frescos, tamaño AA.",
       "price": 9500,
       "stock": 150,
       "category": "lacteos-huevos",
-      "image": "https://via.placeholder.com/300x300?text=Huevos"
+      "image": "https://pngimg.com/uploads/egg/egg_PNG24.png"
     },
     {
-      "id": 5,
+      "id": "ih45",
       "name": "Leche entera (1 litro)",
       "description": "Leche pasteurizada, entera, en presentación de 1L.",
       "price": 4200,
       "stock": 180,
       "category": "lacteos-huevos",
-      "image": "https://via.placeholder.com/300x300?text=Leche"
+      "image": "http://pngimg.com/uploads/milk/milk_PNG12737.png"
     },
     {
-      "id": 6,
+      "id": "8fdh",
       "name": "Pan tajado integral (500 g)",
       "description": "Pan integral tajado, ideal para sándwiches o desayunos.",
       "price": 5400,
       "stock": 90,
       "category": "panaderia",
-      "image": "https://via.placeholder.com/300x300?text=Pan+Integral"
+      "image": "https://pngimg.com/uploads/bread/bread_PNG2221.png"
     },
     {
-      "id": 7,
+      "id": "54gs",
       "name": "Pechuga de pollo sin hueso (500 g)",
       "description": "Pechuga de pollo lista para cocinar. Precio por 500 g.",
       "price": 8500,
       "stock": 75,
       "category": "carnes",
-      "image": "https://via.placeholder.com/300x300?text=Pechuga"
+      "image": "https://png.pngtree.com/png-vector/20231101/ourmid/pngtree-chicken-breast-chicken-png-image_10386722.png"
     },
     {
-      "id": 8,
+      "id": "rgf4",
       "name": "Papa criolla (1 kg)",
       "description": "Papa criolla amarilla fresca. Precio por kilo.",
       "price": 2900,
       "stock": 160,
       "category": "verduras",
-      "image": "https://via.placeholder.com/300x300?text=Papa+Criolla"
+      "image": "https://www.buyfrescapp.com/wp-content/uploads/2025/04/BOG-CAT003-00008.png"
     },
     {
-      "id": 9,
+      "id": "9fy4",
       "name": "Tomate chonto (1 kg)",
       "description": "Tomate fresco y jugoso. Ideal para salsas y ensaladas.",
       "price": 3500,
       "stock": 130,
       "category": "verduras",
-      "image": "https://via.placeholder.com/300x300?text=Tomate+Chonto"
+      "image": "https://pngimg.com/uploads/tomato/tomato_PNG12542.png"
     },
     {
-      "id": 10,
+      "id": "10r5",
       "name": "Café molido colombiano (250 g)",
       "description": "Café 100% colombiano, tostado medio. Presentación 250 g.",
       "price": 8700,
       "stock": 110,
       "category": "bebidas",
-      "image": "https://via.placeholder.com/300x300?text=Café+Colombiano"
+      "image": "https://pngimg.com/uploads/coffee_jar/coffee_jar_PNG17080.png"
     }
   ],
   "users": [

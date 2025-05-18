@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export const HeaderAdmin = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link to={"/admin"} className="navbar-brand fw-bolder fs-4">
           E-Commerce

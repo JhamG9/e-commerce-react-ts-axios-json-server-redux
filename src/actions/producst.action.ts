@@ -1,18 +1,30 @@
-import axios from '../api/axios';
+import axios from "../api/axios";
+import { ProductI } from "../interfaces/Product";
 
-export const getProductsAction = async() => {
-  const response = await axios.get('/products');;
-  return response.data;  
+export const getProductsAction = async () => {
+  const response = await axios.get("/products");
+  return response.data;
 };
 
-export const getProductById = (id: number) => {
-  return axios.get(`/products/${id}`);
+export const getProductById = async (id: string) => {
+  const response = await axios.get(`/products/${id}`);
+  return response.data;
 };
 
-export const createProduct = (data: any) => {
-  return axios.post('/products', data);
+export const createProductAction = async(data: any) => {
+  const response = await axios.post("/products", data); 
+  return response.data;
 };
 
-export const deleteProduct = (id: number) => {
-  return axios.delete(`/products/${id}`);
+export const deleteProductAction = async (id: number) => {
+  const response = await axios.delete(`/products/${id}`);
+  return response.data;
+};
+
+export const updateProductAction = async (
+  idProduct: string,
+  body: Partial<ProductI>
+) => {
+  const response = await axios.put(`/products/${idProduct}`, body);
+  return response.data;
 };
