@@ -18,7 +18,6 @@ export const ListUsers = () => {
   return (
     <div>
       <h1>Listado de usuarios</h1>
-
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 pt-1">
         {users.map((user: UserI) => (
           <CardUser user={user} key={user.id}/>

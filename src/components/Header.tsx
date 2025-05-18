@@ -1,10 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import { CartSummary } from "./CartSummaty";
 
-export const HeaderAdmin = () => {
+export const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link to={"/admin"} className="navbar-brand fw-bolder fs-4">
+        <Link to={"/"} className="navbar-brand fw-bolder fs-4">
           E-Commerce
         </Link>
         <button
@@ -22,20 +24,20 @@ export const HeaderAdmin = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li className="nav-item active">
-              <Link to={"/admin"} className="nav-link">
-                Productos
+              <Link to={"/about-us"} className="nav-link">
+                Sobre Nosotros
               </Link>
             </li>
-            
+
             <li className="nav-item active">
-              <Link to={"/admin/users"} className="nav-link">
-                Usuarios
+              <Link to={"/promotions"} className="nav-link">
+                Promociones
               </Link>
             </li>
           </ul>
 
           <div>
-            <p>User</p>
+            <CartSummary />
           </div>
         </div>
       </div>

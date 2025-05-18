@@ -1,12 +1,5 @@
-export interface Cart {
-  id: string;
-  userId: number;
-  productId: number;
-  quantity: number;
-}
-
 export interface ProductI {
-  id: number;
+  id: string;
   name: string;
   description: string;
   price: number;
@@ -14,4 +7,3 @@ export interface ProductI {
   category: string;
   image: string;
 }
-
