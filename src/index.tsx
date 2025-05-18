@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { EcommerceReact } from './EcommerceReact';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/router';
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <EcommerceReact />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
