@@ -129,6 +129,18 @@
       "userId": "ftr356",
       "productId": "def456",
       "quantity": 6
+    },
+    {
+      "id": "a352",
+      "userId": "ftr356",
+      "productId": "54gs",
+      "quantity": 5
+    },
+    {
+      "id": "65be",
+      "userId": "ftr356",
+      "productId": "h5u3",
+      "quantity": 6
     }
   ]
 }

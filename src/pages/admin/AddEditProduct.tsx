@@ -116,12 +116,19 @@ export const AddEditProduct = () => {
 
         <div className="form-group pt-3">
           <label>Categoría</label>
-          <input
-            type="text"
+
+          <select
             className="form-control"
-            placeholder="Ingresa el nombre del producto"
             {...register("category", { required: true })}
-          />
+          >
+            <option value={"frutas"}>Frutas</option>
+            <option value={"granos"}>Granos</option>
+            <option value={"lacteos-huevos"}>Lacteos - Huevos</option>
+            <option value={"panaderia"}>Panaderia</option>
+            <option value={"carnes"}>Carnes</option>
+            <option value={"verduras"}>Verduras</option>
+            <option value={"bebidas"}>Bebidas</option>
+          </select>
         </div>
 
         <div className="form-group pt-3">

@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { alertShow } from "../utils/alerts";
 
 export const HeaderAdmin = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () =>{
+    alertShow('¡Gracias por visitarnos! :)')
+    localStorage.removeItem("isAdmin");
+    navigate("/login");
+  }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -26,7 +35,7 @@ export const HeaderAdmin = () => {
                 Productos
               </Link>
             </li>
-            
+
             <li className="nav-item active">
               <Link to={"/admin/users"} className="nav-link">
                 Usuarios
@@ -34,9 +43,9 @@ export const HeaderAdmin = () => {
             </li>
           </ul>
 
-          <div>
-            <p>User</p>
-          </div>
+          <span className="navbar-text">
+            <button className="btn btn-outline-light" onClick={handleLogout}>Cerrar sesión</button>
+          </span>
         </div>
       </div>
     </nav>
