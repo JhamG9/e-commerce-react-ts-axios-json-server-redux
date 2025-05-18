@@ -24,9 +24,7 @@ const cartSlice = createSlice({
 export const { initializeCart } = cartSlice.actions;
 export default cartSlice.reducer;
 
-export const fetchCart = () => async (dispatch: AppDispatch) => {
-  console.log("aAAA");
-  
+export const fetchCart = () => async (dispatch: AppDispatch) => {  
   const cart = await getCartAction();
   dispatch(initializeCart(cart));
 };

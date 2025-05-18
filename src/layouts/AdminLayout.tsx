@@ -1,15 +1,17 @@
-import React from "react";
 import { HeaderAdmin } from "../components/HeaderAdmin";
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 export const AdminLayout = () => {
-  return (
+  const isAuthenticated = localStorage.getItem("isAdmin");
+
+  return isAuthenticated ? (
     <>
       <HeaderAdmin />
-
       <div className="container pt-4">
         <Outlet />
       </div>
     </>
+  ) : (
+    <Navigate to={"/login"} replace />
   );
 };

@@ -10,6 +10,7 @@ import {
 } from "../actions/cart.action";
 import { CartI } from "../interfaces/Cart.interface";
 import { fetchCart } from "../store/cartSlice";
+import { toast } from "react-toastify";
 
 interface Props {
   product: ProductI;
@@ -44,6 +45,17 @@ export const ProductQuantityControl = ({ product }: Props) => {
         quantity,
       });
     }
+
+    toast.success("Carrito actualizado", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
     dispatch(fetchCart());
   };

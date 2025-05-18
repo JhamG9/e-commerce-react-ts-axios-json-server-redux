@@ -2,8 +2,17 @@ import axiosInstance from "../api/axios";
 import { CartI } from "../interfaces/Cart.interface";
 
 export const getCartAction = async () => {
-  const response = await axiosInstance.get("/cart");
-  return response.data;
+  const responseCart = await axiosInstance.get("/cart?_expand=product");
+  const cartItems = await responseCart.data;
+
+  const responseProducts = await axiosInstance.get("/products");
+  const products = await responseProducts.data;
+
+  const cartWithProducts = cartItems.map((item: any) => ({
+    ...item,
+    product: products.find((p: any) => p.id === item.productId),
+  }));
+  return cartWithProducts;
 };
 
 export const getProductInCartAtion = async (productId: string) => {

@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
+import { Link } from "react-router-dom";
 
 export const CartSummary = () => {
   const totalItems = useSelector((state: RootState) =>
@@ -7,13 +8,13 @@ export const CartSummary = () => {
   );
 
   return (
-    <div className="position-relative d-inline-block">
+    <Link to={'/cart'} className="position-relative d-inline-block">
       <i className="bi bi-cart-fill fs-4 text-light" ></i>
       {totalItems > 0 && (
         <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           {totalItems}
         </span>
       )}
-    </div>
+    </Link>
   );
 };
