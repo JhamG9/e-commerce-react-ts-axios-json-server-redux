@@ -93,21 +93,27 @@
   ],
   "users": [
     {
-      "id": "1",
+      "id": "afsd423",
       "name": "Admin",
       "email": "admin@tienda.com",
-      "role": "admin"
+      "role": "Administrador"
     },
     {
-      "id": "2",
-      "name": "Cliente",
-      "email": "cliente@tienda.com",
-      "role": "user"
+      "id": "ftr356",
+      "name": "Jham Giron",
+      "email": "jham@gmail.com",
+      "role": "Cliente"
+    },
+     {
+      "id": "oyg532",
+      "name": "Carlos Perez",
+      "email": "carlos.perez@tienda.com",
+      "role": "Trabajador"
     }
   ],
   "cart": [
     {
-      "id": "1",
+      "id": "ergf732",
       "userId": 2,
       "productId": 1,
       "quantity": 2

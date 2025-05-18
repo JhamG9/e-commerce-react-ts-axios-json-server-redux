@@ -15,9 +15,3 @@ export interface ProductI {
   image: string;
 }
 
-export interface User {
-  id: string;
-  name: string;
-  email: string;
-  role: string;
-}

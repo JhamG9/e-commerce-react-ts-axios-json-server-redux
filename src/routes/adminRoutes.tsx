@@ -1,6 +1,7 @@
 import { AdminLayout } from "../layouts/AdminLayout";
 import { ListProducts } from "../pages/admin/ListProducts";
 import { AddEditProduct } from "../pages/admin/AddEditProduct";
+import { ListUsers } from "../pages/admin/ListUsers";
 
 export const adminRoutes = {
   path: "admin",
@@ -9,6 +10,6 @@ export const adminRoutes = {
     { path: "", element: <ListProducts /> },
     { path: "product/add", element: <AddEditProduct /> },
     { path: "product/edit/:id", element: <AddEditProduct /> },
-    // más rutas aquí...
+    { path: "users", element: <ListUsers /> },
   ],
 };

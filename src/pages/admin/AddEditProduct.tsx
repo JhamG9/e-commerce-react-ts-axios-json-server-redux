@@ -5,7 +5,7 @@ import {
   getProductById,
   updateProductAction,
 } from "../../actions/producst.action";
-import { ProductI } from "../../interfaces/Product";
+import { ProductI } from "../../interfaces/Product.interface";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { alertShow } from "../../utils/alerts";
 

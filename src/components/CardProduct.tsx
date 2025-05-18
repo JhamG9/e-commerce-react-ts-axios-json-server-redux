@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { deleteProductAction } from "../actions/producst.action";
-import { ProductI } from "../interfaces/Product";
+import { ProductI } from "../interfaces/Product.interface";
 import { alertQuestion, alertShow } from "../utils/alerts";
 
 interface Props {
@@ -41,10 +41,12 @@ export const CardProduct = ({ product, reloadProducts }: Props) => {
         className="card-img-top img-card-product"
         alt={product.name}
       />
-      <div className="card-body text-center">
+      <div className="card-body ">
         <h4>{product.name}</h4>
         <p className="card-text">{product.description}</p>
-        <div className="d-flex align-items-center justify-content-center gap-2 m-auto">
+        <p><strong>Cantidad:</strong> {product.stock}</p>
+        <p><strong>Precio:</strong> {product.price}</p>
+        {/* <div className="d-flex align-items-center justify-content-center gap-2 m-auto">
           <button className="btn btn-outline-secondary rounded-circle">
             –
           </button>
@@ -52,7 +54,7 @@ export const CardProduct = ({ product, reloadProducts }: Props) => {
           <button className="btn btn-outline-secondary rounded-circle">
             +
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

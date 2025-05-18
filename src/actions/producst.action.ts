@@ -1,5 +1,5 @@
 import axios from "../api/axios";
-import { ProductI } from "../interfaces/Product";
+import { ProductI } from "../interfaces/Product.interface";
 
 export const getProductsAction = async () => {
   const response = await axios.get("/products");

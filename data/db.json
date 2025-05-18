@@ -2,12 +2,21 @@
   "products": [
     {
       "id": "abc123",
-      "name": "Manzanas rojas (3 kg)",
+      "name": "Manzanas rojas (1 kg)",
       "description": "Manzanas frescas y dulces. Se venden por kilo.",
       "price": 8200,
       "stock": 120,
-      "category": "frutas32",
+      "category": "frutas",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQezLLaAdKT8f16d0EIWRTFNjKP3R_vGbxDjQ&s"
+    },
+    {
+      "id": "def456",
+      "name": "Plátanos maduros (1 kg)",
+      "description": "Plátanos ricos en energía natural. Precio por kilo.",
+      "price": 2600,
+      "stock": 200,
+      "category": "frutas",
+      "image": "https://pngimg.com/uploads/banana/banana_PNG814.png"
     },
     {
       "id": "ca44",
@@ -17,6 +26,15 @@
       "stock": 300,
       "category": "granos",
       "image": "https://pngimg.com/uploads/rice/rice_PNG26.png"
+    },
+    {
+      "id": "h5u3",
+      "name": "Huevos AA (12 unidades)",
+      "description": "Docena de huevos frescos, tamaño AA.",
+      "price": 9500,
+      "stock": 150,
+      "category": "lacteos-huevos",
+      "image": "https://pngimg.com/uploads/egg/egg_PNG24.png"
     },
     {
       "id": "ih45",
@@ -71,34 +89,31 @@
       "stock": 110,
       "category": "bebidas",
       "image": "https://pngimg.com/uploads/coffee_jar/coffee_jar_PNG17080.png"
-    },
-    {
-      "id": "0a37",
-      "name": "Windows Desktop",
-      "description": "sfasdfsdafasdfds sdfsafsda",
-      "price": "20000",
-      "stock": "232",
-      "category": "Frutas",
-      "image": "https://raw.githubusercontent.com/JhamG9/api-viaja/main/uploads/santa-marta/santa-marta.webp"
     }
   ],
   "users": [
     {
-      "id": "1",
+      "id": "afsd423",
       "name": "Admin",
       "email": "admin@tienda.com",
-      "role": "admin"
+      "role": "Administrador"
     },
     {
-      "id": "2",
-      "name": "Cliente",
-      "email": "cliente@tienda.com",
-      "role": "user"
+      "id": "ftr356",
+      "name": "Jham Giron",
+      "email": "jham@gmail.com",
+      "role": "Cliente"
+    },
+     {
+      "id": "oyg532",
+      "name": "Carlos Perez",
+      "email": "carlos.perez@tienda.com",
+      "role": "Trabajador"
     }
   ],
   "cart": [
     {
-      "id": "1",
+      "id": "ergf732",
       "userId": 2,
       "productId": 1,
       "quantity": 2
