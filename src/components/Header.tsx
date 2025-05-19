@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { CartSummary } from "./CartSummaty";
+import { CartSummary } from "./CartSummary";
 
 export const Header = () => {
   return (

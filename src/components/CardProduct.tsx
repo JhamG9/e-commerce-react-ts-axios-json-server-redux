@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { deleteProductAction } from "../actions/producst.action";
 import { ProductI } from "../interfaces/Product.interface";
 import { alertQuestion, alertShow } from "../utils/alerts";
-import { useEffect, useState } from "react";
 import { ProductQuantityControl } from "./ProductQuantityControl";
 
 interface Props {
@@ -53,14 +52,14 @@ export const CardProduct = ({
       <div className="card-body ">
         <h4>{product.name}</h4>
         <p className="card-text">{product.description}</p>
-        <p>
+        <p data-testid="product-stock">
           <strong>Cantidad:</strong> {product.stock}
         </p>
-        <p>
+        <p data-testid="product-price">
           <strong>Precio:</strong> {product.price}
         </p>
 
-        {!isAdmin && <ProductQuantityControl product={product}  />}
+        {!isAdmin && <ProductQuantityControl product={product} />}
       </div>
     </div>
   );

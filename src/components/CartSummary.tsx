@@ -11,7 +11,7 @@ export const CartSummary = () => {
     <Link to={'/cart'} className="position-relative d-inline-block">
       <i className="bi bi-cart-fill fs-4 text-light" ></i>
       {totalItems > 0 && (
-        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" data-testid="cart-badge">
           {totalItems}
         </span>
       )}

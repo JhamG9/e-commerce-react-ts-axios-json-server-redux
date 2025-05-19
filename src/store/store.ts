@@ -7,6 +7,5 @@ export const store = configureStore({
   },
 });
 
-// Tipos para usar en tus componentes
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

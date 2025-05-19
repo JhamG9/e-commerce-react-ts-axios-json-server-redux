@@ -3,7 +3,7 @@ import { CartI } from "../interfaces/Cart.interface";
 import { getCartAction } from "../actions/cart.action";
 import { AppDispatch } from "./store";
 
-interface CartState {
+export interface CartState {
   items: CartI[];
   isLoaded: boolean;
 }
