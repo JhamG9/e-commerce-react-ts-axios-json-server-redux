@@ -1,70 +1,26 @@
 import { useEffect, useState } from "react";
 import { ProductI } from "../interfaces/Product.interface";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../store/store";
-import {
-  createCartAction,
-  deleteCartAction,
-  getProductInCartAtion,
-  updateCartAction,
-} from "../actions/cart.action";
-import { CartI } from "../interfaces/Cart.interface";
-import { fetchCart } from "../store/cartSlice";
-import { toast } from "react-toastify";
-
+import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
+import { useCartManager } from "../hooks/useCartManager";
 interface Props {
   product: ProductI;
 }
 
 export const ProductQuantityControl = ({ product }: Props) => {
+  const { updateCart } = useCartManager();
   const cartItem = useSelector((state: RootState) =>
     state.cart.items.find((item) => item.productId === product.id)
   );
   const [quantity, setQuantity] = useState<number>(cartItem?.quantity || 0);
   const [isFirstRun, setIsFirstRun] = useState(true);
 
-  const dispatch = useDispatch<AppDispatch>();
-
-  const updateCart = async () => {
-    const productsInCart = await getProductInCartAtion(product.id);
-    const productExisting: CartI = productsInCart[0];
-
-    if (productExisting) {
-      if (quantity === 0) {
-        await deleteCartAction(productExisting.id);
-      } else {
-        await updateCartAction(productExisting.id, {
-          ...productExisting,
-          quantity,
-        });
-      }
-    } else {
-      await createCartAction({
-        userId: "ftr356",
-        productId: product.id,
-        quantity,
-      });
-    }
-
-    toast.success("Carrito actualizado", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
-
-    dispatch(fetchCart());
-  };
   useEffect(() => {
     if (isFirstRun) {
       setIsFirstRun(false);
     } else {
       const timer = setTimeout(() => {
-        updateCart();
+        updateCart(product, quantity);
       }, 1000);
       return () => clearTimeout(timer);
     }

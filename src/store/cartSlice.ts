@@ -5,10 +5,12 @@ import { AppDispatch } from "./store";
 
 interface CartState {
   items: CartI[];
+  isLoaded: boolean;
 }
 
 const initialState: CartState = {
   items: [],
+  isLoaded: false,
 };
 
 const cartSlice = createSlice({
@@ -17,6 +19,7 @@ const cartSlice = createSlice({
   reducers: {
     initializeCart(state, action: PayloadAction<CartI[]>) {
       state.items = action.payload;
+      state.isLoaded = true;
     }
   },
 });

@@ -113,34 +113,16 @@
   ],
   "cart": [
     {
-      "id": "9652",
-      "userId": "ftr356",
-      "productId": "ca44",
-      "quantity": 5
-    },
-    {
-      "id": "5327",
-      "userId": "ftr356",
-      "productId": "abc123",
-      "quantity": 3
-    },
-    {
-      "id": "9a65",
+      "id": "eb4f",
       "userId": "ftr356",
       "productId": "def456",
-      "quantity": 6
+      "quantity": 1
     },
     {
-      "id": "a352",
+      "id": "f7bc",
       "userId": "ftr356",
-      "productId": "54gs",
-      "quantity": 5
-    },
-    {
-      "id": "65be",
-      "userId": "ftr356",
-      "productId": "h5u3",
-      "quantity": 6
+      "productId": "8fdh",
+      "quantity": 1
     }
   ]
 }

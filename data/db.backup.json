@@ -104,7 +104,7 @@
       "email": "jham@gmail.com",
       "role": "Cliente"
     },
-     {
+    {
       "id": "oyg532",
       "name": "Carlos Perez",
       "email": "carlos.perez@tienda.com",
@@ -113,10 +113,34 @@
   ],
   "cart": [
     {
-      "id": "ergf732",
-      "userId": 2,
-      "productId": 1,
-      "quantity": 2
+      "id": "9652",
+      "userId": "ftr356",
+      "productId": "ca44",
+      "quantity": 5
+    },
+    {
+      "id": "5327",
+      "userId": "ftr356",
+      "productId": "abc123",
+      "quantity": 3
+    },
+    {
+      "id": "9a65",
+      "userId": "ftr356",
+      "productId": "def456",
+      "quantity": 6
+    },
+    {
+      "id": "a352",
+      "userId": "ftr356",
+      "productId": "54gs",
+      "quantity": 5
+    },
+    {
+      "id": "65be",
+      "userId": "ftr356",
+      "productId": "h5u3",
+      "quantity": 6
     }
   ]
 }
